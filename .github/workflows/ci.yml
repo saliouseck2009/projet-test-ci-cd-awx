@@ -9,4 +9,6 @@ jobs:
     - name: Run Django unit tests
       run: |
         pip3 install --user django
+        sudo apt-get build-dep python-psycopg2
+        pip3 install psycopg2-binary
         python3 manage.py test
